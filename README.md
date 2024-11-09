@@ -1,71 +1,61 @@
-🌱 Greenify
+<h1>🌱 Greenify</h1>
 
-Greenify is a simple yet powerful tool to help boost your GitHub contributions graph by automating commits over a specified date range. With Greenify, you can create random commits between any two dates to "greenify" your GitHub profile.
+<p>Greenify is a simple yet powerful tool to help boost your GitHub contributions graph by automating commits over a specified date range. With Greenify, you can create random commits between any two dates to "greenify" your GitHub profile.</p>
 
-🚀 Features
+<h2>🚀 Features</h2>
 
-📅 Generate random commit dates between two given dates.
+<ul>
+  <li>📅 Generate random commit dates between two given dates.</li>
+  <li>🧑‍💻 Automate multiple commits with customizable commit counts.</li>
+  <li>📈 Boost your GitHub profile activity effortlessly.</li>
+</ul>
 
-🧑‍💻 Automate multiple commits with customizable commit counts.
+<h2>📦 Installation</h2>
 
-📈 Boost your GitHub profile activity effortlessly.
+<ol>
+  <li>Clone this repository:
+    <pre><code>git clone https://github.com/your-username/greenify.git</code></pre>
+  </li>
+  <li>Install dependencies:
+    <pre><code>npm install jsonfile moment simple-git random-int</code></pre>
+  </li>
+</ol>
 
+<h2>⚙️ Usage</h2>
 
-📦 Installation
+<p>To use Greenify, call the <code>createCommitsInRange</code> function with:</p>
 
-1. Clone this repository:
+<ul>
+  <li><code>start</code>: The start date for commits (format: <code>DD-MM-YYYY</code>).</li>
+  <li><code>end</code>: The end date for commits (format: <code>DD-MM-YYYY</code>).</li>
+  <li><code>commitCount</code>: Number of commits to create.</li>
+</ul>
 
-git clone https://github.com/your-username/greenify.git
-
-
-2. Install dependencies:
-
-npm install jsonfile moment simple-git random-int
-
-
-
-⚙️ Usage
-
-To use Greenify, call the createCommitsInRange function with:
-
-start: The start date for commits (format: DD-MM-YYYY).
-
-end: The end date for commits (format: DD-MM-YYYY).
-
-commitCount: Number of commits to create.
-
-
-const createCommitsInRange = require('./greenify.js');
-
+<pre><code>const createCommitsInRange = require('./greenify.js');
 createCommitsInRange('01-01-2023', '01-01-2024', 100);
+</code></pre>
 
-This example creates 100 random commits between January 1, 2023, and January 1, 2024.
+<p>This example creates 100 random commits between January 1, 2023, and January 1, 2024.</p>
 
-🛠️ How It Works
+<h2>🛠️ How It Works</h2>
 
-1. 🎲 It generates random dates within your specified range.
+<ol>
+  <li>🎲 It generates random dates within your specified range.</li>
+  <li>📝 Each commit is added with a timestamp matching that random date.</li>
+  <li>🔄 The function recursively commits until it reaches the specified commit count.</li>
+</ol>
 
+<h2>🚨 Important Notes</h2>
 
-2. 📝 Each commit is added with a timestamp matching that random date.
+<ul>
+  <li><strong>Use Responsibly</strong>: Generating too many commits can be seen as "spamming" and might lead to account restrictions.</li>
+  <li><strong>Personal Use Only</strong>: Greenify is meant for fun and personal use.</li>
+</ul>
 
+<h2>🌍 Contributions</h2>
 
-3. 🔄 The function recursively commits until it reaches the specified commit count.
+<p>We welcome contributions! Feel free to submit a pull request or open an issue.</p>
 
+<hr>
 
-
-🚨 Important Notes
-
-Use Responsibly: Generating too many commits can be seen as "spamming" and might lead to account restrictions.
-
-Personal Use Only: Greenify is meant for fun and personal use.
-
-
-🌍 Contributions
-
-We welcome contributions! Feel free to submit a pull request or open an issue.
-
-
----
-
-Happy Greenifying! 🌳
-
+<h3>Happy Greenifying! 🌳</h3>
